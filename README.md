@@ -22,7 +22,7 @@ Once you have created an application on Twitter, you need the following:
 	These will be used when we setup the Flume agent.
 
 ####Install Flume
-####In `flume.conf`, substitute `CONSUMER_KEY`, `CONSUMER_SECRET`, `ACCESS_TOKEN` and `ACCESS_TOKEN_SECRET` with the values copied from Twitter app console. 
+In `flume.conf`, substitute `CONSUMER_KEY`, `CONSUMER_SECRET`, `ACCESS_TOKEN` and `ACCESS_TOKEN_SECRET` with the values copied from Twitter app console. 
 
 ####Now type below commands to create folders in HDFS:
 
