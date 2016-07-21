@@ -13,7 +13,7 @@ The application extracts raw Twitter data, stores in HDFS, assigns positive, neg
 
 ####Create a Twitter application
 
-	Once you have created an application on Twitter, you need the following:
+Once you have created an application on Twitter, you need the following:
 
 * 	Consumer Key (API Key)
 * 	Consumer Secret (API Secret)
