@@ -11,7 +11,7 @@ The application extracts raw Twitter data, stores in HDFS, assigns positive, neg
 * `time_zone_map.tsv` maps time zone with country.
 * `tweets.sql` contains definition of all tables and views created on Hive.
 
-2. Create a Twitter application
+####Create a Twitter application
 
 	Once you have created an application on Twitter, you need the following:
 
@@ -22,10 +22,10 @@ The application extracts raw Twitter data, stores in HDFS, assigns positive, neg
 
 	These will be used when we setup the Flume agent.
 
-3. Install Flume
-4. In `flume.conf`, substitute `CONSUMER_KEY`, `CONSUMER_SECRET`, `ACCESS_TOKEN` and `ACCESS_TOKEN_SECRET` with the values copied from Twitter app console. 
+####Install Flume
+####In `flume.conf`, substitute `CONSUMER_KEY`, `CONSUMER_SECRET`, `ACCESS_TOKEN` and `ACCESS_TOKEN_SECRET` with the values copied from Twitter app console. 
 
-5. Now type below commands to create folders in HDFS:
+####Now type below commands to create folders in HDFS:
 
 * `hadoop fs –mkdir data`
 * `hadoop fs –mkdir data/dictionary`
@@ -39,7 +39,7 @@ The application extracts raw Twitter data, stores in HDFS, assigns positive, neg
 All tweets which we are going to extract will be stored in `tweets_raw` folder. 
 
 
-6. Run Twitter Extraction Program using Flume
+####Run Twitter Extraction Program using Flume
 
 We can start the flume agent with below command:
 
@@ -49,7 +49,7 @@ This will start loading Twitter data into HDFS. Wait for about 10 minutes so tha
 
 Now you can view the files in the location folder by using -ls and –cat commands.
 
-7. Run Hive script and create tables and view on extracted data files 
+####Run Hive script and create tables and view on extracted data files 
 
 At the command prompt, type the following command, then press the Enter: `hive –f tweets.sql`
 
@@ -62,7 +62,3 @@ The tweets.sql script will create tables & views which will help in transforming
 * Create a new table that includes the sentiment value for each Tweet.
 
 The command `show tables` will show you all the tables. You can browse the data using the `select * from <table name>;` command.
-
-
-
-
