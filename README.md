@@ -18,7 +18,6 @@ Once you have created an application on Twitter, you need the following:
 * 	Consumer Secret (API Secret)
 * 	Access Token
 * 	Access Token Secret
-
 	These will be used when we setup the Flume agent.
 
 ####Install Flume
