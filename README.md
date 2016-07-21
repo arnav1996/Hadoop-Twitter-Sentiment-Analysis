@@ -3,8 +3,7 @@ Analyze huge amounts of real-time tweets using Hadoop
 
 The application extracts raw Twitter data, stores in HDFS, assigns positive, negative and neutral sentiment to each tweet and how to analyze and visualizes this sentiment data.
 
-####Project Details
-1. Project Files
+####Project Files
 * `flume.conf` will be used for Flume configuration.
 * `dictionary.tsv` is a reference file to map words to sentiment i.e. whether a word is of positive sentiment, negative sentiment or neutral sentiment.
 * `json-serde-1.3.8-SNAPSHOT-jar-with-dependencies.jar` is a compiled jar file used to store JSON data into HDFS.
